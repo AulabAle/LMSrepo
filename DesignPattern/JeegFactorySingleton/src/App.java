@@ -15,9 +15,9 @@ public class App {
         jeeg.muovitiIndietro();
 
         //Non castato
-        LanciaMissili lmC = (LanciaMissili) jeegFactorySingleton.instanceCasting(JeegComponentType.LanciaMissiliDx, LanciaMissili.class);
-        Laser lsC = (Laser) jeegFactorySingleton.instanceCasting(JeegComponentType.LaserSx, Laser.class);
-        Tank tankC = (Tank) jeegFactorySingleton.instanceCasting(JeegComponentType.Tank, Tank.class);
+        LanciaMissili lmC = jeegFactorySingleton.instanceCasting(JeegComponentType.LanciaMissiliDx, LanciaMissili.class);
+        Laser lsC = jeegFactorySingleton.instanceCasting(JeegComponentType.LaserSx, Laser.class);
+        Tank tankC = jeegFactorySingleton.instanceCasting(JeegComponentType.Tank, Tank.class);
 
         Jeeg jeegC = new Jeeg(lmC, lsC, tankC);
         
